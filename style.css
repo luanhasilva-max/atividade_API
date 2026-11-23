@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7e9e9;
+    color: #713f45;
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e8caca;
+    border-radius: 10px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.topo h1 {
+    font-size: 22px;
+    color: #713f45;
+}
+
+#contador {
+    background: #f5e7e8;
+    color: #8b555c;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.controles {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #e5caca;
+    border-radius: 7px;
+    outline: none;
+    color: #713f45;
+}
+
+input:focus {
+    border-color: #95616a;
+}
+
+input::placeholder {
+    color: #a77c81;
+}
+
+button {
+    background: #89545d;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #713f45;
+}
+
+button:disabled {
+    background: #b99da0;
+    cursor: not-allowed;
+}
+
+#mensagem {
+    color: #89545d;
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+#mensagem.erro {
+    color: #c0394b;
+}
+
+#lista-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cartao {
+    background: #fffafa;
+    border: 1px solid #e8cccc;
+    border-radius: 8px;
+    padding: 13px;
+    transition: 0.2s;
+}
+
+.cartao:hover {
+    border-color: #b98289;
+    transform: translateY(-2px);
+}
+
+.cartao span {
+    display: block;
+    color: #a66d75;
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+
+.cartao h2 {
+    color: #713f45;
+    font-size: 15px;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+}
+
+.cartao p {
+    color: #805f63;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    #lista-posts {
+        grid-template-columns: 1fr;
+    }
+
+    .topo h1 {
+        font-size: 19px;
+    }
+
+    button {
+        padding: 0 10px;
+    }
+}

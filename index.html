@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Mural</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <div class="topo">
+            <h1>Meu Mural</h1>
+            <span id="contador">0 publicações</span>
+        </div>
+
+        <section class="controles">
+            <input
+                type="search"
+                id="filtro"
+                placeholder="Filtrar pelo título..."
+            >
+
+            <button id="btn-carregar" type="button">
+                Carregar
+            </button>
+        </section>
+
+        <p id="mensagem" role="status"></p>
+
+        <section id="lista-posts" aria-label="Publicações"></section>
+
+    </main>
+
+</body>
+</html>
